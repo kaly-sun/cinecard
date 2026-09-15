@@ -1,0 +1,33 @@
+name: cinecard
+description: "CineCard - catálogo de filmes para a atividade de manipulação de imagens no Flutter."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.2
+
+# Apenas o Flutter em si. Nenhum pacote externo.
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  # ---------------------------------------------------------------
+  # DECLARAÇÃO DOS ASSETS (imagens locais)
+  # Cada arquivo que o Image.asset vai usar precisa estar listado aqui.
+  # O caminho é relativo à raiz do projeto (mesma pasta do pubspec.yaml).
+  # ATENÇÃO: a indentação com espaços importa no YAML!
+  # ---------------------------------------------------------------
+  assets:
+    - assets/images/diretor_meirelles.png
+    - assets/images/diretor_nolan.png
+    - assets/images/diretor_bong.png
+    - assets/images/diretor_salles.png
+    - assets/images/diretor_arraes.png
